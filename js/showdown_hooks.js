@@ -1193,7 +1193,7 @@ $(document).ready(function() {
    "13fc25a3b19071978dd6": "Platinum",
    "be0a4fedbe0ff31e47b0": "Heart Gold/Soul Silver",
    "78381c312866ee2e6ff9": "Black/White",
-   "83c196dce6759252b3f4": "Black 2/White 2",
+   "83c196dce6759252b3f4": "Dusty White 2",
    "8d1ab90a3b3c494d8485": "Eternal X/Wilting Y Insanity Rebalanced",
    "68bfb2ccba14b7f6b1f0": "Inclement Emerald",
    "e9030beba9c1ba8804e8": "Kaizo Colloseum",
@@ -1302,7 +1302,7 @@ $(document).ready(function() {
 
     if (!params.get('data')) {return}
 
-   npoint = `https://api.npoint.io/${params.get('data')}`
+   npoint = `https://api.local.invalid/${params.get('data')}`
 
 
    if (params.get('data').includes("Pokeweb")) {

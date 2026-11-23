@@ -29,7 +29,7 @@
        "13fc25a3b19071978dd6": "Platinum",
        "be0a4fedbe0ff31e47b0": "Heart Gold/Soul Silver",
        "78381c312866ee2e6ff9": "Black/White",
-       "83c196dce6759252b3f4": "Black 2/White 2",
+       "83c196dce6759252b3f4": "Dusty white 2",
        "8d1ab90a3b3c494d8485": "Eternal X/Wilting Y Insanity Rebalanced",
        "68bfb2ccba14b7f6b1f0": "Inclement Emerald",
        "e9030beba9c1ba8804e8": "Kaizo Colloseum",
@@ -80,7 +80,7 @@
             return false;
         };
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.minsed -i 's/"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
@@ -95,7 +95,20 @@
 </script>
 
 <body>
+<div id="game-select-screen" style="display: none; position: fixed; inset: 0; background: #26292e; z-index: 9999; flex-direction: column; align-items: center; justify-content: center; gap: 30px; overflow-y: auto; padding: 40px;">
+  
+ <a href="?data=83c196dce6759252b3f4&gen=8&dmgGen=5&types=5&view=calculator" style="text-decoration: none; color: #fff; text-align: center; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    <img src="./img/Dusty_White_2.png" alt="Dusty White" style="width: 190px; border-radius: 6px; box-shadow: 0 6px 16px rgba(0,0,0,0.5); display: block; margin: 0 auto 12px;">
+    <span style="font-family: sans-serif; font-size: 20px; font-weight: 500;">Dusty White</span>
+  </a>
 
+</div>
+
+<script>
+  if (!window.location.search.includes('view=calculator')) {
+    document.getElementById('game-select-screen').style.display = 'flex';
+  }
+</script>
 <!-- <div id="encounter-container">
     <h1 id="enc-header">Burned Tower</h1>
 
@@ -227,7 +240,7 @@
                 <option data-source="https://hzla.github.io/Dynamic-Calc/?data=13fc25a3b19071978dd6&gen=7&switchIn=4&types=5&dmgGen=4">Platinum</option> 
                 <option data-source="https://hzla.github.io/Dynamic-Calc/?data=be0a4fedbe0ff31e47b0&gen=7&switchIn=4&types=5&dmgGen=4">Heart Gold/Soul Silver</option>
                 <option data-source="https://hzla.github.io/Dynamic-Calc/?data=78381c312866ee2e6ff9&gen=5&types=5">Black/White</option>
-                <option data-source="https://hzla.github.io/Dynamic-Calc/?data=83c196dce6759252b3f4&gen=5&types=5">Black 2/White 2</option> 
+                <option data-source="https://hzla.github.io/Dynamic-Calc/?data=83c196dce6759252b3f4&gen=5&types=5">Dusty White 2</option> 
             </optgroup>
             
 
