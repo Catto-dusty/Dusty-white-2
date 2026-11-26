@@ -258,7 +258,7 @@ function get_box() {
         if (names[i].includes("My Box")) {
             box.push(names[i].split("[")[0])
             var pok_name = names[i].split(" (")[0].toLowerCase().replace(" ","-").replace(".","").replace(".","").replace("’","").replace(":","-")
-            var pok = `<img class="trainer-pok left-side ${sprite_style}" src="./img/${sprite_style}/${pok_name}.png" data-id="${names[i].split("[")[0]}">`
+            var pok = `<img class="trainer-pok left-side ${sprite_style}" src="https://github.io{sprite_style}/${pok_name}.png" data-id="${names[i].split("[")[0]}">`
             box_html += pok
         }   
     }
@@ -614,7 +614,7 @@ function displayParty() {
 
 
             var pok = `<div class="trainer-pok-container">
-                <img class="trainer-pok left-side" src="./img/${sprite_style}/${sprite_name}.png" data-id="${data_id}">
+                <img class="trainer-pok left-side" src="https://github.io{sprite_style}/${sprite_name}.png" data-id="${data_id}">
                 <div class="bp-info">${abv(set_data['moves'][0].replace("Hidden Power", "HP"))}</div>
                 <div class="bp-info">${abv(set_data['moves'][1].replace("Hidden Power", "HP"))}</div>
                 <div class="bp-info">${abv(set_data['moves'][2].replace("Hidden Power", "HP"))}</div>
@@ -1563,7 +1563,7 @@ $(document).ready(function() {
         set_data['moves'] = padArray(set_data['moves'], 4, "-")
 
         var pok = `<div class="trainer-pok-container">
-            <img class="trainer-pok left-side" src="./img/${sprite_style}/${sprite_name}.png" data-id="${data_id}">`
+            <img class="trainer-pok left-side" src="https://github.io{sprite_style}/${sprite_name}.png" data-id="${data_id}">`
 
         if (set_data['item']) {
             item_name = set_data['item'].toLowerCase().replace(" ", "_").replace("'", "") 
